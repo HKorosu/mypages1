@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin người dùng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dDNb2lOrMTWaqkah3Ba5yi5WdIvk0PGsU9FldXESvndsbj8S6xbsQHE5wyM9nNdA9Gk&usqp=CAU" alt="Logo">
+        <h1 style="color: paleturquoise;">Học Tập Tốt</h1>
+        <img src="https://photo.znews.vn/w660/Uploaded/kbd_bcvi/2020_08_05/1.jpg" alt="Banner">
+    </header>
+
+    <main>
+        <h2>Đăng ký thông tin người dùng</h2>
+        <form id="userForm">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" maxlength="50" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <fieldset>
+                <legend>Giới tính:</legend>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="Nam" required> Nam
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="Nữ" required> Nữ
+                </label>
+                <label for="otherGender">
+                    <input type="radio" id="otherGender" name="gender" value="Khác" required> Khác
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sở thích:</legend>
+                <label for="sports">
+                    <input type="checkbox" id="sports" name="hobbies" value="Thể thao"> Thể thao
+                </label>
+                <label for="movies">
+                    <input type="checkbox" id="movies" name="hobbies" value="Phim ảnh"> Phim ảnh
+                </label>
+                <label for="reading">
+                    <input type="checkbox" id="reading" name="hobbies" value="Đọc sách"> Đọc sách
+                </label>
+                <label for="music">
+                    <input type="checkbox" id="music" name="hobbies" value="Âm nhạc"> Âm nhạc
+                </label>
+                <label for="other">
+                    <input type="checkbox" id="other" name="hobbies" value="Khác"> Khác
+                </label>
+            </fieldset>
+
+            <label for="bio">Giới thiệu bản thân:</label>
+            <textarea id="bio" name="bio" rows="4" required></textarea>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+        <div id="userInfo" style="display:none;">
+            <h3>Thông tin của bạn</h3>
+            <p id="displayName"></p>
+            <p id="displayEmail"></p>
+            <p id="displayPhone"></p>
+            <p id="displayGender"></p>
+            <p id="displayHobbies"></p>
+            <p id="displayBio"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tên sinh viên: Trần Đình Hải </p>
+        <p>Email: haikorosu@gmail.com </p>
+        <p>Lớp: T2409M </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
